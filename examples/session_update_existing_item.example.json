@@ -1,0 +1,67 @@
+{
+  "schema_version": "1.0",
+  "update_id": "8f14e45f-cee0-4c9b-a8ad-777700007777",
+  "generated_at": "2026-01-22T19:30:00+00:00",
+  "language_standard": "en-US",
+  "session": {
+    "session_id": "8f14e45f-cee0-4c9b-a8ad-888800008888",
+    "started_at": "2026-01-22T19:00:00+00:00",
+    "ended_at": "2026-01-22T19:30:00+00:00",
+    "topic": "Follow-up risk discussion",
+    "session_type": "leadership",
+    "summary": "Reused 'mitigate' correctly in a new scenario about vendor risk.",
+    "strengths": ["Successfully reused previously taught vocabulary"],
+    "weak_points": [],
+    "fluency_notes": [],
+    "next_focus": []
+  },
+  "vocabulary": [
+    {
+      "client_ref": "vocab_mitigate_update",
+      "item_id": "REPLACE-WITH-REAL-ITEM-UUID-FROM-AI-CONTEXT",
+      "importance_score": 9,
+      "cefr_level": "B2",
+      "topics": ["leadership", "vendor management"],
+      "source_context": "We mitigated the vendor delay by ordering a backup supplier.",
+      "selection_reason": "Learner reused this item correctly in a new context; raise importance.",
+      "observed_from": "user",
+      "word": "mitigate",
+      "lemma": "mitigate",
+      "part_of_speech": "verb",
+      "sense_key": "reduce-harm-or-risk",
+      "meaning_english": "to make something harmful, risky, or serious less severe",
+      "meaning_persian": null,
+      "ipa_american": "/\u02c8m\u0268t\u0259\u02cce\u026at/",
+      "stress_note": "Primary stress on the first syllable",
+      "examples": ["We mitigated the vendor delay by ordering a backup supplier."],
+      "collocations": ["mitigate a delay"],
+      "usage_note": "Common in professional, technical, and project-management discussions.",
+      "common_errors": []
+    }
+  ],
+  "expressions": [],
+  "grammar_patterns": [],
+  "mistakes": [],
+  "usage_events": [
+    {
+      "event_id": "8f14e45f-cee0-4c9b-a8ad-999900009999",
+      "item_id": null,
+      "client_ref": "vocab_mitigate_update",
+      "event_type": "user_production",
+      "correctness": true,
+      "evidence_context": "We mitigated the vendor delay by ordering a backup supplier.",
+      "correction": null,
+      "occurred_at": "2026-01-22T19:10:00+00:00"
+    }
+  ],
+  "memory_patch": {
+    "current_topics_add": [],
+    "current_topics_remove": [],
+    "active_goals_add": [],
+    "active_goals_remove": [],
+    "completed_topics_add": [],
+    "weak_points_upsert": [],
+    "weak_points_resolved": [],
+    "next_session_focus": []
+  }
+}

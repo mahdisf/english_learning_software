@@ -1,0 +1,11 @@
+{{FrontSide}}
+<hr class="divider">
+<div class="card card-grammar back">
+  <div class="block explanation"><span class="label">Explanation</span><div class="value">{{ExplanationEnglish}}</div></div>
+  {{#ExplanationPersian}}<div class="block explanation-fa"><span class="label">Persian</span><div class="value fa">{{ExplanationPersian}}</div></div>{{/ExplanationPersian}}
+  <div class="block structure"><span class="label">Structure</span><div class="value">{{Structure}}</div></div>
+  {{#Examples}}<div class="block examples"><span class="label">Examples</span><div class="value">{{Examples}}</div></div>{{/Examples}}
+  {{#LearnerProblem}}<div class="block learner-problem"><span class="label">Your specific challenge</span><div class="value">{{LearnerProblem}}</div></div>{{/LearnerProblem}}
+  {{#CommonErrors}}<div class="block errors"><span class="label">Common errors</span><div class="value">{{CommonErrors}}</div></div>{{/CommonErrors}}
+  <div class="meta">{{#CEFR}}<span class="cefr">{{CEFR}}</span>{{/CEFR}}<span class="tags">{{Tags}}</span></div>
+</div>

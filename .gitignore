@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+.pytest_cache/
+.pytest_tmp/
+.coverage
+htmlcov/
+
+# Local configuration
+config.toml
+
+# User data - never commit private learning content
+data/*.db
+data/*.db-journal
+data/*.db-wal
+data/*.db-shm
+data/imported/*.json
+data/backups/*.db
+!data/imported/.gitkeep
+!data/backups/.gitkeep
+
+# Generated exports and reports
+exports/*
+!exports/.gitkeep
+reports/*
+!reports/.gitkeep
+
+# Editor
+.vscode/
+.idea/

@@ -1,0 +1,52 @@
+# Copy this file to config.toml and adjust as needed.
+# config.toml is git-ignored; it may contain local path preferences.
+
+[paths]
+# All paths are relative to the project root unless absolute.
+database = "data/english_coach.db"
+imported_dir = "data/imported"
+backups_dir = "data/backups"
+exports_dir = "exports"
+reports_dir = "reports"
+
+[general]
+# IANA timezone used for display and date filters.
+timezone = "Asia/Tehran"
+
+[anki]
+deck_root = "English Coach"
+vocabulary_deck = "English Coach::Vocabulary"
+expressions_deck = "English Coach::Expressions"
+grammar_deck = "English Coach::Grammar"
+mistakes_deck = "English Coach::Mistakes"
+
+[context_export]
+# Default number of items per category included in the compact AI context export.
+default_item_budget = 25
+recent_session_count = 5
+
+[learner_profile]
+native_language = "Persian"
+current_level = "B1"
+target_level = "C1"
+english_variety = "American English"
+pronunciation_standard = "General American"
+daily_study_minutes = 30
+persian_meaning_policy = "Include Persian meanings only when a clear B1-B2 English definition is unlikely to be sufficient."
+default_timezone = "Asia/Tehran"
+
+[learner_profile.professional_background]
+roles = [
+    "Senior Robotics Software Engineer",
+    "Technical Product Manager",
+]
+education = ["MSc in Mechatronics Engineering"]
+
+[learner_profile.learning_goals]
+goals = [
+    "International professional communication",
+    "Meetings and leadership discussions",
+    "Technical and behavioral interviews",
+    "Presentations and networking",
+    "Possible PhD applications",
+]

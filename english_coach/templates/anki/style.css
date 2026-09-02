@@ -1,0 +1,161 @@
+.card {
+  font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #1f2430;
+  background-color: #fbfbfd;
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 18px 20px 26px 20px;
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+
+.type-badge {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 3px 10px;
+  border-radius: 999px;
+  margin-bottom: 12px;
+  color: #ffffff;
+}
+
+.card-vocab .type-badge { background-color: #2f6fed; }
+.card-expr .type-badge { background-color: #12896b; }
+.card-grammar .type-badge { background-color: #8347c9; }
+.card-mistake .type-badge { background-color: #d1483f; }
+
+.headword, .pattern-name, .wrong-sentence {
+  font-size: 26px;
+  font-weight: 700;
+  margin: 4px 0;
+}
+
+.pos {
+  font-size: 14px;
+  font-style: italic;
+  color: #5b6472;
+  margin-bottom: 6px;
+}
+
+.context-cue {
+  font-size: 15px;
+  color: #5b6472;
+  margin-bottom: 10px;
+}
+
+.recall-hint {
+  margin-top: 14px;
+  font-size: 15px;
+  color: #3a4150;
+  border-top: 1px dashed #d7dbe3;
+  padding-top: 10px;
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid #e1e4ea;
+  margin: 14px 0;
+}
+
+.block {
+  margin-bottom: 14px;
+}
+
+.label {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #7b8494;
+  margin-bottom: 3px;
+}
+
+.value {
+  font-size: 17px;
+}
+
+.value.fa,
+.fa {
+  direction: rtl;
+  text-align: right;
+  line-height: 1.9;
+  font-size: 18px;
+}
+
+.meta {
+  margin-top: 16px;
+  font-size: 13px;
+  color: #7b8494;
+}
+
+.meta .cefr {
+  border: 1px solid #c7cdd8;
+  border-radius: 6px;
+  padding: 1px 7px;
+  margin-right: 8px;
+}
+
+.coach-id {
+  display: none;
+}
+
+.wrong-sentence {
+  color: #8a2f2a;
+}
+
+.corrected-sentence {
+  color: #12896b;
+  font-weight: 700;
+}
+
+/* Night mode (Anki desktop + AnkiDroid dark theme) */
+.nightMode.card {
+  background-color: #1b1d22;
+  color: #e7e9ee;
+}
+
+.nightMode .pos,
+.nightMode .context-cue,
+.nightMode .meta,
+.nightMode .label {
+  color: #9aa3b2;
+}
+
+.nightMode .recall-hint {
+  color: #cfd3da;
+  border-top-color: #383c46;
+}
+
+.nightMode .divider {
+  border-top-color: #383c46;
+}
+
+.nightMode .meta .cefr {
+  border-color: #4a5162;
+}
+
+.nightMode .wrong-sentence {
+  color: #f0918a;
+}
+
+.nightMode .corrected-sentence {
+  color: #6bd1ac;
+}
+
+@media (max-width: 420px) {
+  .card {
+    font-size: 16px;
+    padding: 14px 14px 20px 14px;
+  }
+  .headword, .pattern-name, .wrong-sentence {
+    font-size: 22px;
+  }
+  .value {
+    font-size: 16px;
+  }
+}

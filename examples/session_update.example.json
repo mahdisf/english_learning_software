@@ -1,0 +1,201 @@
+{
+  "schema_version": "1.0",
+  "update_id": "8f14e45f-cee0-4c9b-a8ad-111100001111",
+  "generated_at": "2026-01-15T19:30:00+00:00",
+  "language_standard": "en-US",
+  "session": {
+    "session_id": "8f14e45f-cee0-4c9b-a8ad-222200002222",
+    "started_at": "2026-01-15T19:00:00+00:00",
+    "ended_at": "2026-01-15T19:30:00+00:00",
+    "topic": "Leading a project status meeting",
+    "session_type": "leadership",
+    "summary": "Practiced summarizing project risks and delegating action items in a mock status meeting.",
+    "strengths": [
+      "Clear high-level summaries",
+      "Confident opening statement"
+    ],
+    "weak_points": [
+      "Drops articles before singular role nouns",
+      "Overuses 'make' as a general-purpose verb"
+    ],
+    "fluency_notes": [
+      "Speech was noticeably smoother in the second half of the session"
+    ],
+    "next_focus": [
+      "Practice mitigate/mitigation in risk-reporting contexts",
+      "Continue article usage before role nouns"
+    ]
+  },
+  "vocabulary": [
+    {
+      "client_ref": "vocab_mitigate",
+      "item_id": null,
+      "importance_score": 8,
+      "cefr_level": "B2",
+      "topics": ["leadership", "risk management"],
+      "source_context": "We should mitigate the risk before it affects the release date.",
+      "selection_reason": "High-value professional verb for risk and project discussions.",
+      "observed_from": "coach",
+      "word": "mitigate",
+      "lemma": "mitigate",
+      "part_of_speech": "verb",
+      "sense_key": "reduce-harm-or-risk",
+      "meaning_english": "to make something harmful, risky, or serious less severe",
+      "meaning_persian": null,
+      "ipa_american": "/\u02c8m\u0268t\u0259\u02cce\u026at/",
+      "stress_note": "Primary stress on the first syllable",
+      "examples": [
+        "A clear rollout plan can mitigate implementation risks.",
+        "We added a fallback server to mitigate the outage risk."
+      ],
+      "collocations": ["mitigate risk", "mitigate the impact"],
+      "usage_note": "Common in professional, technical, and project-management discussions.",
+      "common_errors": []
+    },
+    {
+      "client_ref": "vocab_delegate",
+      "item_id": null,
+      "importance_score": 7,
+      "cefr_level": "B2",
+      "topics": ["leadership", "meetings"],
+      "source_context": "I will delegate the testing task to Sara.",
+      "selection_reason": "Learner produced this correctly and it is central to the leadership goal.",
+      "observed_from": "user",
+      "word": "delegate",
+      "lemma": "delegate",
+      "part_of_speech": "verb",
+      "sense_key": "assign-task-to-someone",
+      "meaning_english": "to give a task or responsibility to someone else",
+      "meaning_persian": null,
+      "ipa_american": "/\u02c8d\u025bl\u0259\u02ccge\u026at/",
+      "stress_note": "Primary stress on the first syllable",
+      "examples": ["I will delegate the testing task to Sara."],
+      "collocations": ["delegate a task", "delegate authority"],
+      "usage_note": "Standard verb for assigning work to a team member.",
+      "common_errors": []
+    }
+  ],
+  "expressions": [
+    {
+      "client_ref": "expr_singled_out",
+      "item_id": null,
+      "importance_score": 6,
+      "cefr_level": "B2",
+      "topics": ["workplace communication"],
+      "source_context": "I do not want new team members to feel singled out.",
+      "selection_reason": "Useful professional expression for team communication.",
+      "observed_from": "coach",
+      "expression": "feel singled out",
+      "expression_type": "professional_expression",
+      "meaning_english": "to feel that one person is being treated differently or targeted",
+      "meaning_persian": null,
+      "ipa_american": null,
+      "examples": ["I do not want new team members to feel singled out."],
+      "usage_contexts": ["workplace communication", "team leadership"],
+      "common_errors": []
+    }
+  ],
+  "grammar_patterns": [
+    {
+      "client_ref": "grammar_present_perfect",
+      "item_id": null,
+      "importance_score": 7,
+      "cefr_level": "B2",
+      "topics": ["grammar", "status updates"],
+      "source_context": "I have not received the QA report yet.",
+      "selection_reason": "Learner tends to substitute the simple past for unfinished results.",
+      "observed_from": "both",
+      "pattern_name": "Present perfect for an unfinished result",
+      "explanation_english": "Use the present perfect when a past action's result is still relevant now.",
+      "explanation_persian": null,
+      "structure": "subject + have/has not + past participle + yet",
+      "examples": ["I have not received the QA report yet."],
+      "learner_problem": "The learner tends to use the simple past for an unresolved present situation.",
+      "common_errors": ["I didn't received the report yet."]
+    }
+  ],
+  "mistakes": [
+    {
+      "client_ref": "mistake_make_example",
+      "item_id": null,
+      "importance_score": 5,
+      "cefr_level": "B1",
+      "topics": ["word choice"],
+      "source_context": "I made some examples during the demo.",
+      "selection_reason": "Recurring collocation error with 'make' vs 'give'.",
+      "observed_from": "user",
+      "wrong_sentence": "I made some examples during the demo.",
+      "corrected_sentence": "I gave some examples during the demo.",
+      "category": "word_choice",
+      "explanation_english": "English uses the collocation 'give an example', not 'make an example'.",
+      "explanation_persian": null,
+      "severity": "medium",
+      "evidence": "The learner used this sentence while describing the demo.",
+      "additional_examples": ["Could you give me another example?"],
+      "occurrences_in_session": 1
+    }
+  ],
+  "usage_events": [
+    {
+      "event_id": "8f14e45f-cee0-4c9b-a8ad-333300003333",
+      "item_id": null,
+      "client_ref": "vocab_mitigate",
+      "event_type": "coach_introduction",
+      "correctness": null,
+      "evidence_context": "The word was introduced while discussing release risk.",
+      "correction": null,
+      "occurred_at": "2026-01-15T19:05:00+00:00"
+    },
+    {
+      "event_id": "8f14e45f-cee0-4c9b-a8ad-444400004444",
+      "item_id": null,
+      "client_ref": "vocab_delegate",
+      "event_type": "user_production",
+      "correctness": true,
+      "evidence_context": "I will delegate the testing task to Sara.",
+      "correction": null,
+      "occurred_at": "2026-01-15T19:12:00+00:00"
+    },
+    {
+      "event_id": "8f14e45f-cee0-4c9b-a8ad-555500005555",
+      "item_id": null,
+      "client_ref": "mistake_make_example",
+      "event_type": "mistake_occurrence",
+      "correctness": false,
+      "evidence_context": "I made some examples during the demo.",
+      "correction": "I gave some examples during the demo.",
+      "occurred_at": "2026-01-15T19:18:00+00:00"
+    },
+    {
+      "event_id": "8f14e45f-cee0-4c9b-a8ad-666600006666",
+      "item_id": null,
+      "client_ref": "grammar_present_perfect",
+      "event_type": "prompted_recall",
+      "correctness": true,
+      "evidence_context": "Learner correctly produced 'I have not received the QA report yet' when prompted.",
+      "correction": null,
+      "occurred_at": "2026-01-15T19:25:00+00:00"
+    }
+  ],
+  "memory_patch": {
+    "current_topics_add": ["leadership meetings", "risk communication"],
+    "current_topics_remove": [],
+    "active_goals_add": ["Lead a status meeting confidently in English"],
+    "active_goals_remove": [],
+    "completed_topics_add": [],
+    "weak_points_upsert": [
+      {
+        "key": "articles-before-role-nouns",
+        "description": "The learner sometimes omits articles before singular job and role nouns.",
+        "severity": "medium",
+        "evidence": ["I am engineer on this project."],
+        "last_seen_at": "2026-01-15T19:10:00+00:00"
+      }
+    ],
+    "weak_points_resolved": [],
+    "next_session_focus": [
+      "Practice mitigate/mitigation in risk-reporting contexts",
+      "Continue article usage before role nouns"
+    ]
+  }
+}

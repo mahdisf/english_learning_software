@@ -1,0 +1,9 @@
+{{FrontSide}}
+<hr class="divider">
+<div class="card card-mistake back">
+  <div class="block corrected"><span class="label">Corrected</span><div class="value corrected-sentence">{{CorrectedSentence}}</div></div>
+  <div class="block explanation"><span class="label">Explanation</span><div class="value">{{ExplanationEnglish}}</div></div>
+  {{#ExplanationPersian}}<div class="block explanation-fa"><span class="label">Persian</span><div class="value fa">{{ExplanationPersian}}</div></div>{{/ExplanationPersian}}
+  {{#AdditionalExamples}}<div class="block examples"><span class="label">Additional examples</span><div class="value">{{AdditionalExamples}}</div></div>{{/AdditionalExamples}}
+  <div class="meta"><span class="tags">{{Category}} {{Severity}}</span></div>
+</div>

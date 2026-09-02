@@ -1,0 +1,980 @@
+{
+  "$defs": {
+    "ExpressionItem": {
+      "additionalProperties": false,
+      "properties": {
+        "client_ref": {
+          "minLength": 1,
+          "title": "Client Ref",
+          "type": "string"
+        },
+        "item_id": {
+          "anyOf": [
+            {
+              "format": "uuid",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Item Id"
+        },
+        "importance_score": {
+          "maximum": 10,
+          "minimum": 1,
+          "title": "Importance Score",
+          "type": "integer"
+        },
+        "cefr_level": {
+          "anyOf": [
+            {
+              "enum": [
+                "A1",
+                "A2",
+                "B1",
+                "B2",
+                "C1",
+                "C2"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Cefr Level"
+        },
+        "topics": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Topics",
+          "type": "array"
+        },
+        "source_context": {
+          "minLength": 1,
+          "title": "Source Context",
+          "type": "string"
+        },
+        "selection_reason": {
+          "minLength": 1,
+          "title": "Selection Reason",
+          "type": "string"
+        },
+        "observed_from": {
+          "enum": [
+            "user",
+            "coach",
+            "both"
+          ],
+          "title": "Observed From",
+          "type": "string"
+        },
+        "expression": {
+          "minLength": 1,
+          "title": "Expression",
+          "type": "string"
+        },
+        "expression_type": {
+          "enum": [
+            "idiom",
+            "phrasal_verb",
+            "collocation",
+            "professional_expression",
+            "sentence_chunk",
+            "other"
+          ],
+          "title": "Expression Type",
+          "type": "string"
+        },
+        "meaning_english": {
+          "minLength": 1,
+          "title": "Meaning English",
+          "type": "string"
+        },
+        "meaning_persian": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Meaning Persian"
+        },
+        "ipa_american": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Ipa American"
+        },
+        "examples": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Examples",
+          "type": "array"
+        },
+        "usage_contexts": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Usage Contexts",
+          "type": "array"
+        },
+        "common_errors": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Common Errors",
+          "type": "array"
+        }
+      },
+      "required": [
+        "client_ref",
+        "importance_score",
+        "source_context",
+        "selection_reason",
+        "observed_from",
+        "expression",
+        "expression_type",
+        "meaning_english"
+      ],
+      "title": "ExpressionItem",
+      "type": "object"
+    },
+    "GrammarItem": {
+      "additionalProperties": false,
+      "properties": {
+        "client_ref": {
+          "minLength": 1,
+          "title": "Client Ref",
+          "type": "string"
+        },
+        "item_id": {
+          "anyOf": [
+            {
+              "format": "uuid",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Item Id"
+        },
+        "importance_score": {
+          "maximum": 10,
+          "minimum": 1,
+          "title": "Importance Score",
+          "type": "integer"
+        },
+        "cefr_level": {
+          "anyOf": [
+            {
+              "enum": [
+                "A1",
+                "A2",
+                "B1",
+                "B2",
+                "C1",
+                "C2"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Cefr Level"
+        },
+        "topics": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Topics",
+          "type": "array"
+        },
+        "source_context": {
+          "minLength": 1,
+          "title": "Source Context",
+          "type": "string"
+        },
+        "selection_reason": {
+          "minLength": 1,
+          "title": "Selection Reason",
+          "type": "string"
+        },
+        "observed_from": {
+          "enum": [
+            "user",
+            "coach",
+            "both"
+          ],
+          "title": "Observed From",
+          "type": "string"
+        },
+        "pattern_name": {
+          "minLength": 1,
+          "title": "Pattern Name",
+          "type": "string"
+        },
+        "explanation_english": {
+          "minLength": 1,
+          "title": "Explanation English",
+          "type": "string"
+        },
+        "explanation_persian": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Explanation Persian"
+        },
+        "structure": {
+          "minLength": 1,
+          "title": "Structure",
+          "type": "string"
+        },
+        "examples": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Examples",
+          "type": "array"
+        },
+        "learner_problem": {
+          "minLength": 1,
+          "title": "Learner Problem",
+          "type": "string"
+        },
+        "common_errors": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Common Errors",
+          "type": "array"
+        }
+      },
+      "required": [
+        "client_ref",
+        "importance_score",
+        "source_context",
+        "selection_reason",
+        "observed_from",
+        "pattern_name",
+        "explanation_english",
+        "structure",
+        "learner_problem"
+      ],
+      "title": "GrammarItem",
+      "type": "object"
+    },
+    "MemoryPatch": {
+      "additionalProperties": false,
+      "properties": {
+        "current_topics_add": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Current Topics Add",
+          "type": "array"
+        },
+        "current_topics_remove": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Current Topics Remove",
+          "type": "array"
+        },
+        "active_goals_add": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Active Goals Add",
+          "type": "array"
+        },
+        "active_goals_remove": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Active Goals Remove",
+          "type": "array"
+        },
+        "completed_topics_add": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Completed Topics Add",
+          "type": "array"
+        },
+        "weak_points_upsert": {
+          "items": {
+            "$ref": "#/$defs/WeakPointUpsert"
+          },
+          "title": "Weak Points Upsert",
+          "type": "array"
+        },
+        "weak_points_resolved": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Weak Points Resolved",
+          "type": "array"
+        },
+        "next_session_focus": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Next Session Focus",
+          "type": "array"
+        }
+      },
+      "title": "MemoryPatch",
+      "type": "object"
+    },
+    "MistakeItem": {
+      "additionalProperties": false,
+      "properties": {
+        "client_ref": {
+          "minLength": 1,
+          "title": "Client Ref",
+          "type": "string"
+        },
+        "item_id": {
+          "anyOf": [
+            {
+              "format": "uuid",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Item Id"
+        },
+        "importance_score": {
+          "maximum": 10,
+          "minimum": 1,
+          "title": "Importance Score",
+          "type": "integer"
+        },
+        "cefr_level": {
+          "anyOf": [
+            {
+              "enum": [
+                "A1",
+                "A2",
+                "B1",
+                "B2",
+                "C1",
+                "C2"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Cefr Level"
+        },
+        "topics": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Topics",
+          "type": "array"
+        },
+        "source_context": {
+          "minLength": 1,
+          "title": "Source Context",
+          "type": "string"
+        },
+        "selection_reason": {
+          "minLength": 1,
+          "title": "Selection Reason",
+          "type": "string"
+        },
+        "observed_from": {
+          "enum": [
+            "user",
+            "coach",
+            "both"
+          ],
+          "title": "Observed From",
+          "type": "string"
+        },
+        "wrong_sentence": {
+          "minLength": 1,
+          "title": "Wrong Sentence",
+          "type": "string"
+        },
+        "corrected_sentence": {
+          "minLength": 1,
+          "title": "Corrected Sentence",
+          "type": "string"
+        },
+        "category": {
+          "minLength": 1,
+          "title": "Category",
+          "type": "string"
+        },
+        "explanation_english": {
+          "minLength": 1,
+          "title": "Explanation English",
+          "type": "string"
+        },
+        "explanation_persian": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Explanation Persian"
+        },
+        "severity": {
+          "enum": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "title": "Severity",
+          "type": "string"
+        },
+        "evidence": {
+          "minLength": 1,
+          "title": "Evidence",
+          "type": "string"
+        },
+        "additional_examples": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Additional Examples",
+          "type": "array"
+        },
+        "occurrences_in_session": {
+          "minimum": 1,
+          "title": "Occurrences In Session",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "client_ref",
+        "importance_score",
+        "source_context",
+        "selection_reason",
+        "observed_from",
+        "wrong_sentence",
+        "corrected_sentence",
+        "category",
+        "explanation_english",
+        "severity",
+        "evidence",
+        "occurrences_in_session"
+      ],
+      "title": "MistakeItem",
+      "type": "object"
+    },
+    "SessionObject": {
+      "additionalProperties": false,
+      "properties": {
+        "session_id": {
+          "format": "uuid",
+          "title": "Session Id",
+          "type": "string"
+        },
+        "started_at": {
+          "anyOf": [
+            {
+              "format": "date-time",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Started At"
+        },
+        "ended_at": {
+          "format": "date-time",
+          "title": "Ended At",
+          "type": "string"
+        },
+        "topic": {
+          "minLength": 1,
+          "title": "Topic",
+          "type": "string"
+        },
+        "session_type": {
+          "enum": [
+            "conversation",
+            "technical_interview",
+            "behavioral_interview",
+            "leadership",
+            "professional_communication",
+            "presentation",
+            "academic",
+            "other"
+          ],
+          "title": "Session Type",
+          "type": "string"
+        },
+        "summary": {
+          "minLength": 1,
+          "title": "Summary",
+          "type": "string"
+        },
+        "strengths": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Strengths",
+          "type": "array"
+        },
+        "weak_points": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Weak Points",
+          "type": "array"
+        },
+        "fluency_notes": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Fluency Notes",
+          "type": "array"
+        },
+        "next_focus": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Next Focus",
+          "type": "array"
+        }
+      },
+      "required": [
+        "session_id",
+        "ended_at",
+        "topic",
+        "session_type",
+        "summary"
+      ],
+      "title": "SessionObject",
+      "type": "object"
+    },
+    "UsageEvent": {
+      "additionalProperties": false,
+      "properties": {
+        "event_id": {
+          "format": "uuid",
+          "title": "Event Id",
+          "type": "string"
+        },
+        "item_id": {
+          "anyOf": [
+            {
+              "format": "uuid",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Item Id"
+        },
+        "client_ref": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Client Ref"
+        },
+        "event_type": {
+          "enum": [
+            "user_production",
+            "prompted_recall",
+            "coach_introduction",
+            "mistake_occurrence"
+          ],
+          "title": "Event Type",
+          "type": "string"
+        },
+        "correctness": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Correctness"
+        },
+        "evidence_context": {
+          "minLength": 1,
+          "title": "Evidence Context",
+          "type": "string"
+        },
+        "correction": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Correction"
+        },
+        "occurred_at": {
+          "format": "date-time",
+          "title": "Occurred At",
+          "type": "string"
+        }
+      },
+      "required": [
+        "event_id",
+        "event_type",
+        "evidence_context",
+        "occurred_at"
+      ],
+      "title": "UsageEvent",
+      "type": "object"
+    },
+    "VocabularyItem": {
+      "additionalProperties": false,
+      "properties": {
+        "client_ref": {
+          "minLength": 1,
+          "title": "Client Ref",
+          "type": "string"
+        },
+        "item_id": {
+          "anyOf": [
+            {
+              "format": "uuid",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Item Id"
+        },
+        "importance_score": {
+          "maximum": 10,
+          "minimum": 1,
+          "title": "Importance Score",
+          "type": "integer"
+        },
+        "cefr_level": {
+          "anyOf": [
+            {
+              "enum": [
+                "A1",
+                "A2",
+                "B1",
+                "B2",
+                "C1",
+                "C2"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Cefr Level"
+        },
+        "topics": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Topics",
+          "type": "array"
+        },
+        "source_context": {
+          "minLength": 1,
+          "title": "Source Context",
+          "type": "string"
+        },
+        "selection_reason": {
+          "minLength": 1,
+          "title": "Selection Reason",
+          "type": "string"
+        },
+        "observed_from": {
+          "enum": [
+            "user",
+            "coach",
+            "both"
+          ],
+          "title": "Observed From",
+          "type": "string"
+        },
+        "word": {
+          "minLength": 1,
+          "title": "Word",
+          "type": "string"
+        },
+        "lemma": {
+          "minLength": 1,
+          "title": "Lemma",
+          "type": "string"
+        },
+        "part_of_speech": {
+          "minLength": 1,
+          "title": "Part Of Speech",
+          "type": "string"
+        },
+        "sense_key": {
+          "minLength": 1,
+          "title": "Sense Key",
+          "type": "string"
+        },
+        "meaning_english": {
+          "minLength": 1,
+          "title": "Meaning English",
+          "type": "string"
+        },
+        "meaning_persian": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Meaning Persian"
+        },
+        "ipa_american": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Ipa American"
+        },
+        "stress_note": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Stress Note"
+        },
+        "examples": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Examples",
+          "type": "array"
+        },
+        "collocations": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Collocations",
+          "type": "array"
+        },
+        "usage_note": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Usage Note"
+        },
+        "common_errors": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Common Errors",
+          "type": "array"
+        }
+      },
+      "required": [
+        "client_ref",
+        "importance_score",
+        "source_context",
+        "selection_reason",
+        "observed_from",
+        "word",
+        "lemma",
+        "part_of_speech",
+        "sense_key",
+        "meaning_english"
+      ],
+      "title": "VocabularyItem",
+      "type": "object"
+    },
+    "WeakPointUpsert": {
+      "additionalProperties": false,
+      "properties": {
+        "key": {
+          "minLength": 1,
+          "title": "Key",
+          "type": "string"
+        },
+        "description": {
+          "minLength": 1,
+          "title": "Description",
+          "type": "string"
+        },
+        "severity": {
+          "enum": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "title": "Severity",
+          "type": "string"
+        },
+        "evidence": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Evidence",
+          "type": "array"
+        },
+        "last_seen_at": {
+          "format": "date-time",
+          "title": "Last Seen At",
+          "type": "string"
+        }
+      },
+      "required": [
+        "key",
+        "description",
+        "severity",
+        "last_seen_at"
+      ],
+      "title": "WeakPointUpsert",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "1.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "update_id": {
+      "format": "uuid",
+      "title": "Update Id",
+      "type": "string"
+    },
+    "generated_at": {
+      "format": "date-time",
+      "title": "Generated At",
+      "type": "string"
+    },
+    "language_standard": {
+      "const": "en-US",
+      "title": "Language Standard",
+      "type": "string"
+    },
+    "session": {
+      "$ref": "#/$defs/SessionObject"
+    },
+    "vocabulary": {
+      "items": {
+        "$ref": "#/$defs/VocabularyItem"
+      },
+      "title": "Vocabulary",
+      "type": "array"
+    },
+    "expressions": {
+      "items": {
+        "$ref": "#/$defs/ExpressionItem"
+      },
+      "title": "Expressions",
+      "type": "array"
+    },
+    "grammar_patterns": {
+      "items": {
+        "$ref": "#/$defs/GrammarItem"
+      },
+      "title": "Grammar Patterns",
+      "type": "array"
+    },
+    "mistakes": {
+      "items": {
+        "$ref": "#/$defs/MistakeItem"
+      },
+      "title": "Mistakes",
+      "type": "array"
+    },
+    "usage_events": {
+      "items": {
+        "$ref": "#/$defs/UsageEvent"
+      },
+      "title": "Usage Events",
+      "type": "array"
+    },
+    "memory_patch": {
+      "$ref": "#/$defs/MemoryPatch"
+    }
+  },
+  "required": [
+    "schema_version",
+    "update_id",
+    "generated_at",
+    "language_standard",
+    "session"
+  ],
+  "title": "SessionUpdate",
+  "type": "object"
+}

@@ -1,0 +1,113 @@
+{
+  "generated_at": "2026-01-16T08:00:00+00:00",
+  "mode": "compact",
+  "learner_profile": {
+    "native_language": "Persian",
+    "current_level": "B1",
+    "target_level": "C1",
+    "english_variety": "American English",
+    "pronunciation_standard": "General American",
+    "daily_study_minutes": 30,
+    "persian_meaning_policy": "Include Persian meanings only when a clear B1-B2 English definition is unlikely to be sufficient.",
+    "professional_background": {
+      "roles": ["Senior Robotics Software Engineer", "Technical Product Manager"],
+      "education": ["MSc in Mechatronics Engineering"]
+    },
+    "learning_goals": {
+      "goals": [
+        "International professional communication",
+        "Meetings and leadership discussions",
+        "Technical and behavioral interviews",
+        "Presentations and networking",
+        "Possible PhD applications"
+      ]
+    }
+  },
+  "active_goals": ["Lead a status meeting confidently in English"],
+  "active_weak_points": [
+    {
+      "key": "articles-before-role-nouns",
+      "description": "The learner sometimes omits articles before singular job and role nouns.",
+      "severity": "medium",
+      "evidence": ["I am engineer on this project."],
+      "last_seen_at": "2026-01-15T19:10:00+00:00"
+    }
+  ],
+  "next_session_focus": [
+    "Practice mitigate/mitigation in risk-reporting contexts",
+    "Continue article usage before role nouns"
+  ],
+  "recent_sessions": [
+    {
+      "session_id": "8f14e45f-cee0-4c9b-a8ad-222200002222",
+      "ended_at": "2026-01-15T19:30:00+00:00",
+      "topic": "Leading a project status meeting",
+      "session_type": "leadership",
+      "summary": "Practiced summarizing project risks and delegating action items in a mock status meeting.",
+      "next_focus": [
+        "Practice mitigate/mitigation in risk-reporting contexts",
+        "Continue article usage before role nouns"
+      ]
+    }
+  ],
+  "unresolved_mistakes": [
+    {
+      "item_id": "3b1f7f0a-1111-4a11-9a11-000000000001",
+      "kind": "mistake",
+      "display_text": "I made some examples during the demo.",
+      "cefr_level": "B1",
+      "importance_score": 5,
+      "mastery_score": 0,
+      "mastery_status": "new",
+      "mastery_overridden": false,
+      "last_used_at": null,
+      "corrected_sentence": "I gave some examples during the demo.",
+      "severity": "medium",
+      "state": "active",
+      "occurrence_count": 1
+    }
+  ],
+  "priority_vocabulary": [
+    {
+      "item_id": "3b1f7f0a-1111-4a11-9a11-000000000002",
+      "kind": "vocabulary",
+      "display_text": "mitigate",
+      "cefr_level": "B2",
+      "importance_score": 8,
+      "mastery_score": 0,
+      "mastery_status": "new",
+      "mastery_overridden": false,
+      "last_used_at": null,
+      "lemma": "mitigate",
+      "part_of_speech": "verb",
+      "meaning_english": "to make something harmful, risky, or serious less severe",
+      "meaning_persian": null
+    }
+  ],
+  "priority_expressions": [],
+  "priority_grammar": [],
+  "recent_for_active_recall": [
+    {
+      "item_id": "3b1f7f0a-1111-4a11-9a11-000000000002",
+      "kind": "vocabulary",
+      "display_text": "mitigate",
+      "cefr_level": "B2",
+      "importance_score": 8,
+      "mastery_score": 0,
+      "mastery_status": "new",
+      "mastery_overridden": false,
+      "last_used_at": null,
+      "lemma": "mitigate",
+      "part_of_speech": "verb",
+      "meaning_english": "to make something harmful, risky, or serious less severe",
+      "meaning_persian": null
+    }
+  ],
+  "omitted_counts": {
+    "vocabulary": 1,
+    "expression": 1,
+    "grammar": 1,
+    "mistake": 0
+  },
+  "instruction": "Reuse every supplied item_id exactly when referring to existing knowledge. Distinguish language the learner actually produced or recalled from language the coach merely introduced. Never invent prior sessions, usage, mastery, or mistakes beyond what is provided here."
+}
