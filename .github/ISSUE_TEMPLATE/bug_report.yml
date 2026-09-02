@@ -1,0 +1,50 @@
+name: Bug report
+description: Report something that is not working as expected
+title: ''
+labels: ['bug']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting! Before submitting, make sure you've checked the
+        [Troubleshooting](https://github.com/mahdisf/english_learning_software#troubleshooting)
+        section of the README — your issue may already be resolved.
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: What went wrong? What did you expect to happen?
+      placeholder: A clear and concise description of the problem.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Minimal steps to reproduce the issue.
+      placeholder: |
+        1. english-coach init
+        2. english-coach import ...
+        3. See error
+      render: bash
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Output of `english-coach` version and OS / Python version.
+      placeholder: |
+        OS: Windows/macOS/Linux
+        Python: 3.12.x
+        english-coach: (pip show english-coach)
+    validations:
+      required: true
+  - type: textarea
+    id: output
+    attributes:
+      label: Error output
+      description: Full error message or traceback, if any. Paste in a code block.
+      render: bash
+    validations:
+      required: false

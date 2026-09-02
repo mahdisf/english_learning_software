@@ -1,5 +1,12 @@
 # English Coach — Local AI-Powered Personal English Coaching Knowledge System
 
+[![Tests](https://github.com/mahdisf/english_learning_software/actions/workflows/tests.yml/badge.svg)](https://github.com/mahdisf/english_learning_software/actions/workflows/tests.yml)
+[![Python](https://img.shields.io/badge/python-3.12+-blue?logo=python)](https://www.python.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Version](https://img.shields.io/badge/version-1.0.0-blue)](https://github.com/mahdisf/english_learning_software/releases)
+
+> **Stable — v1.0.0 released.** Local-first, no network calls, no AI key required to try.
+
 A **local-first**, SQLite-backed knowledge base that tracks your English vocabulary,
 expressions, grammar patterns, mistakes, and coaching memory over time. You talk to
 an external AI (e.g. ChatGPT) using the included system prompt, the AI produces a
@@ -72,6 +79,47 @@ automatic backup before migrating an existing non-empty database.
 
 The SQLite database lives at `data/english_coach.db` by default (configurable —
 see below).
+
+## Quick verify (no AI required)
+
+Run the entire pipeline against a bundled example to confirm everything works:
+
+```sh
+english-coach init
+english-coach validate examples/session_update.example.json
+english-coach import examples/session_update.example.json --yes
+english-coach report progress
+english-coach search "mitigate"
+```
+
+The `examples/` directory ships with a complete sample session update containing
+one item of each kind (vocabulary, expression, grammar, mistake), usage events,
+and a memory patch. `validate` shows a detailed preview of every change **without
+touching the database** — you can inspect it before running `import`.
+
+Expected `progress` output after importing:
+
+```text
+# Progress report
+Total sessions recorded: 1
+## Counts by kind and mastery status
+| Kind        | Status      | Count |
+|---|---|---|
+| vocabulary  | new         | 1     |
+| vocabulary  | practicing  | 1     |
+| expression  | new         | 1     |
+| grammar     | practicing  | 1     |
+| mistake     | new         | 1     |
+
+## Strongest areas
+- [vocabulary] delegate (mastery 57)
+- [grammar] Present perfect for an unfinished result (mastery 57)
+...
+
+## Recommended focus
+- Practice mitigate/mitigation in risk-reporting contexts
+- Continue article usage before role nouns
+```
 
 ## Configuration
 
@@ -276,3 +324,12 @@ pytest
 # or, with coverage:
 pytest --cov=english_coach --cov-report=term-missing
 ```
+
+> **Windows note:** if you see a `PermissionError` on the Temp directory, run
+> `pytest --basetemp=.pytest_tmp` instead.
+
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for development setup and the
+[code of conduct](CONTRIBUTING.md). Bug reports and pull requests are welcome!
+Open an issue to discuss a feature or design change before implementing.
